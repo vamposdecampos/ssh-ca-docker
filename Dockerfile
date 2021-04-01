@@ -51,3 +51,4 @@ RUN ssh-keygen -s /etc/ssh/ca \
     -V -5m:+3650d \
     ~client1/.ssh/id_rsa.pub
 USER client1
+RUN ssh-keygen -L -f ~/.ssh/id_rsa-cert.pub
